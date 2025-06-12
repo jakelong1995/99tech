@@ -13,4 +13,16 @@ body {
   padding: 1rem;
 }
 
+/* Hide number input spinners */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* All component styling will be handled by Tailwind CSS classes in the App.tsx file */
